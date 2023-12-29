@@ -8,5 +8,16 @@
   <p>body</p>
   <span><%= book.body %></span>
 
+  <p>
+    <%= link_to "Show", book_path(book.id) %>
+  </p>
+
+  <p>
+    <%= link_to "Edit", book_path(book.id) %>
+  </p>
+
+  <p>
+    <%= link_to "Destroy", book_path(book.id) %>
+  </p>
 
 <% end %>
