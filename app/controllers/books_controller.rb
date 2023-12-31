@@ -27,6 +27,9 @@ class BooksController < ApplicationController
     redirect_to book_path(book)
   end
 
+  def destroy
+  end
+
  private
   #ストロングパラメータ
   def book_params
