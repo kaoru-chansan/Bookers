@@ -8,11 +8,8 @@
 　<%= link_to "Show", book_path(@book) %>
 </p>
 
-<p>
-　<%= link_to "Edit", edit_book_path(@book) %>
-</p>
 
-<p>
-　<%= link_to "Destroy", book_path(@book), method: :delete, data: { confirm: "本当に削除しますか？" } %>
-</p>
+<%= link_to "Edit", edit_book_path(@book) %>
+
+<%= link_to "Destroy", book_path(@book), method: :delete, data: { confirm: "本当に削除しますか？" } %>
 
