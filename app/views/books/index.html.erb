@@ -9,15 +9,15 @@
   <span><%= book.body %></span>
 
   <p>
-    <%= link_to "Show", book_path(@book) %>
+    <%= link_to "Show", book_path(book) %>
   </p>
 
   <p>
-    <%= link_to "Edit", book_path(@book) %>
+    <%= link_to "Edit", book_path(book) %>
   </p>
 
   <p>
-    <%= link_to "Destroy", book_path(@book) %>
+    <%= link_to "Destroy", book_path(book), method: :delete %>
   </p>
 
 <% end %>
