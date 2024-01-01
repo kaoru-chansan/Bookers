@@ -11,29 +11,6 @@
   </head>
 
   <body>
-    <header>
-      <h1 class="headline1"></h1>
-      <h2 class="headline2"></h2>
-    </header>
-
-      <div class="text-top"><div></div>
-
-
-      <div class="book-box"></div>
-        <div class="head-book1">
-          <p>Title</p>
-          <p>Body</p>
-        </div>
-
-        <div class="book-comment"></div>
-
-    <h3 class="headline3"></h3>
-      <div class="post-box"></div>
-        <div class="error-box"></div>
-          <div class="error-message"></div>
-            <div class="error-count"></div>
-            <ul></ul>
-
     <main>
       <% flash.each do |message_type, message| %>
         <div class="flash-message <%= message_type %>"><%= message %></div>
