@@ -22,11 +22,47 @@
 h1 {
   display: block;
   font-size: 25px;
-  margin: 20px;
+  margin-bottom: 0;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.text-top {
+  margin-left: 40px;
+  margin-top: 0px;
+  padding: 0;
 }
 
 p {
   font-size: 10px;
+}
+
+p:nth-child(1) {
+  margin-left: 10px;
+}
+p:nth-child(2) {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+p:nth-child(3) {
+  margin-left: 0;
+  padding: 0;
+}
+
+
+.index-body {
+  padding: 35px;
+}
+
+.head-book1 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.book-comment {
+  display: flex;
+  justify-content: space-between;
 }
 
 .flash-message {
