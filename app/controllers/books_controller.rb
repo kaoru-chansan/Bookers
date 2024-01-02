@@ -9,6 +9,7 @@ class BooksController < ApplicationController
       flash[:notice] = "Book was successfully updated."
       redirect_to books_path
     else
+      flash.now[:alert] = "error prohibited this book from being saved:"
       render :new
     end
   end

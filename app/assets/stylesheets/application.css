@@ -37,19 +37,22 @@ p {
   font-size: 10px;
 }
 
-p:nth-child(1) {
+.text-top p:nth-child(1) {
   margin-left: 10px;
 }
-p:nth-child(2) {
+.text-top p:nth-child(2) {
   margin-top: 20px;
   margin-left: 10px;
 }
 
-p:nth-child(3) {
+.text-top p:nth-child(3) {
   margin-left: 0;
   padding: 0;
 }
 
+.book-box {
+  margin-bottom: 20px;
+}
 
 .index-body {
   padding: 35px;
@@ -57,14 +60,56 @@ p:nth-child(3) {
 
 .head-book1 {
   display: flex;
-  justify-content: space-around;
+  text-align: center;
+  font-size: 13px;
+}
+
+.head-book1 h5:nth-child(1) {
+  flex-basis: 150px;
+
+}
+
+.head-book1 h5:nth-child(2) {
+  flex-basis: 300px
 }
 
 .book-comment {
   display: flex;
-  justify-content: space-between;
+  font-size: 10px;
 }
 
+.book-comment span:nth-child(1) {
+  flex-basis:   150px;
+}
+
+.book-comment span:nth-child(2) {
+  flex-basis: 300px;
+}
+
+.book-comment p:nth-child(3) {
+  flex-basis: 40px;
+}
+
+.book-comment p:nth-child(4) {
+  flex-basis: 35px;
+}
+
+.book-comment p:nth-child(5) {
+  flex-basis: 40px;
+}
+
+.headline3 {
+  margin: 0;
+}
+
+.post-box {
+  display: block;
+  font-size: 10px;
+}
+
+.post-box p:nth-child(8) {
+ height: 12px;
+}
 
 .flash-message {
   border-radius: 5px;
@@ -73,9 +118,20 @@ p:nth-child(3) {
 }
 
 .flash-message.notice {
-  background-color: #bcdfff;
-  color: #0067C0;
-  border: solid 1px #0067C0;
+  color: #008000;
+  font-size: 10px;
 }
 
+.flash-message.alert {
+  color: #ff0000;
+  font-size: 10px;
+}
 
+.show-box {
+  margin: 35px;
+}
+
+.show-box p:nth-child(1),p:nth-child(2) {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}

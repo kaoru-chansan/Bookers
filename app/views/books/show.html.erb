@@ -1,16 +1,18 @@
+<div class="show-box">
 
-<p>title</p>
-<strong><%= @book.title %></strong>
+  <p>
+    <strong>Title:</strong>
+    <%= @book.title %>
+  </p>
 
-<p>body</p>
-<strong><%= @book.body %></strong>
+  <p>
+    <strong>Body:</strong>
+    <%= @book.body %>
+  </p>
 
-<p>
-　<%= link_to "Show", book_path(@book) %>
-</p>
-
-
-<%= link_to "Edit", edit_book_path(@book) %>
-
-<%= link_to "Destroy", book_path(@book), method: :delete, data: { confirm: "本当に削除しますか？" } %>
-
+    <p>
+    <%= link_to "Edit", edit_book_path(@book) %>
+    |
+    <%= link_to "Back", books_path %>
+  </div>
+</div>
