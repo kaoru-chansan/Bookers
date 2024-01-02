@@ -1,23 +1,30 @@
-<h2>New book</h2>
+<h3 class="headline3">New book</h3>
+
 <%= render 'form' %>
 
 <% if @book && @book.errors.any? %>
-  <%= @book.errors.count %>error prohibited this book from being saved:
-  <ul>
-    <% @book.errors.full_messages.each do |message| %>
-      <li><%= message %></li>
-    <% end %>
-  </ul>
+  <div id="error_explanation">
+    <h2><%= pluralize(@book.errors.count, "error") %> prohibited this book from being saved:</h2>
+    <ul>
+      <% @book.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  </div>
 <% end %>
 
-<!-- from_with部分-->
 <%= form_with model: Book.new, url: books_path, method: :post, local: true do |f| %>
 
-  <h4>Title</h4>
-  <%= f.text_field :title %>
+  <div class="new-text">
+    <p>Title</p>
+    <%= f.text_field :title %>
 
-  <h4>Body</h4>
-  <%= f.text_area :body %>
+    <p>Body</p>
+    <%= f.text_area :body %>
+    </div>
 
-  <%= f.submit 'Create Book' %>
+    <p>
+    <%= f.submit 'Create Book' %>
+    </p>
+ </div>
 <% end %>

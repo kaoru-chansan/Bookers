@@ -1,3 +1,5 @@
+<div class="edit-box">
+
 <h2>Editing Book</h2>
 <% if @book.errors.any? %>
   <%= @book.errors.count %>error prohibited this book from being saved:
@@ -10,20 +12,21 @@
 
 <%= form_with model: @book do |f| %>
 
-  <h4>Title</h4>
+  <p>Title</p>
   <%= f.text_field :title %>
 
-  <h4>Body</h4>
+  <p>Body</p>
   <%= f.text_area :body %>
 
+  <p>
   <%= f.submit 'Update Book' %>
+  </p>
 
   <p>
     <%= link_to "Show", book_path(@book) %>
-  </p>
-
-  <p>
-    <%= link_to "Back", book_path(@book) %>
+    |
+    <%= link_to "Back", books_path %>
   </p>
 
 <% end %>
+</div>

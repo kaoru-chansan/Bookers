@@ -73,6 +73,9 @@ p {
   flex-basis: 300px
 }
 
+.new-text {
+  margin-bottom: 0;
+}
 .book-comment {
   display: flex;
   font-size: 10px;
@@ -115,6 +118,7 @@ p {
   border-radius: 5px;
   padding: 16px 24px;
   margin: 16px 0px;
+  font-size: 10px;
 }
 
 .flash-message.notice {
@@ -124,14 +128,25 @@ p {
 
 .flash-message.alert {
   color: #ff0000;
-  font-size: 10px;
 }
 
 .show-box {
   margin: 35px;
 }
 
-.show-box p:nth-child(1),p:nth-child(2) {
+.show-text {
   margin-left: 20px;
+}
+
+.show-text p:nth-child(1),p:nth-child(2) {
   margin-bottom: 20px;
+}
+
+.edit-box {
+  display: block;
+  margin: 30px;
+}
+
+.h4 {
+  font-size: 10px;
 }
