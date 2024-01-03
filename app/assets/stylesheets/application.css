@@ -72,6 +72,11 @@ p {
   flex-basis: 300px
 }
 
+div#error_explanation {
+  font-size: 10px;
+  color: #ff0000;
+}
+
 .new-text {
   margin-bottom: 0;
 }
