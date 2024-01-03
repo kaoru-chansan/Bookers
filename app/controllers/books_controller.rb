@@ -10,6 +10,7 @@ class BooksController < ApplicationController
       redirect_to book_path(@book)
     else
       flash.now[:alert] = "Errors prohibited this book from being saved:"
+      
       render :index
     end
   end
